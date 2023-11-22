@@ -2,22 +2,26 @@ import React from 'react';
 
 const ItemsComponent = () => {
     const itemsArray = [
-        { id: 1, name: "Item 1", img: "path/to/item1.jpg" },
-        { id: 2, name: "Item 2", img: "path/to/item2.jpg" },
-        { id: 3, name: "Item 3", img: "path/to/item3.jpg" },
-        { id: 4, name: "Item 4", img: "path/to/item4.jpg" },
-        { id: 5, name: "Item 5", img: "path/to/item5.jpg" },
-        { id: 6, name: "Item 6", img: "path/to/item6.jpg" },
+        { id: 1, name: "Nazmul Islam", img: "./nazmul.png" },
+        { id: 2, name: "Nataraj Sharma", img: "./nataraz.png" },
+        { id: 3, name: "Sanjana Akter", img: "./sanjana.png" },
+        { id: 4, name: "Shehnaz Sultana", img: "./shehnaz.png" },
+        { id: 5, name: "Sajal Ahmed", img: "./sajal.png" },
     ];
 
     return (
-        <div>
-            <h5>Items</h5>
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className='md:mx-[140px] md:mb-[80px]'>
+            <h5 className='text-[#FAFAFA] md:mb-[20px]'>Our Teams</h5>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-2">
                 {itemsArray.map(item => (
                     <div key={item.id} className="overflow-hidden text-center">
-                        <img src={item.img} alt={item.name} className="w-full h-auto object-cover rounded-md" />
-                        <p className="mt-2">{item.name}</p>
+                        <img src={item.img} alt={item.name} className="w-[180px] h-auto object-cover rounded-md" />
+                        <p className="font-inter my-1 text-left text-transparent bg-gradient-to-br from-teal-400 via-green-300 to-yellow-500"
+                            style={{
+                                backgroundClip: 'text',
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                            }}>{item.name}</p>
                     </div>
                 ))}
             </div>

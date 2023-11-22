@@ -4,6 +4,7 @@ import ExpertSection from './HomePage/ExpertSection';
 import ServicesSection from './HomePage/ServicesSection';
 import ClientsSection from './HomePage/ClientsSection';
 import TeamSection from './HomePage/TeamSection';
+import ContactUsSection from './HomePage/ContactUsSection';
 
 const Layout = () => {
     return (
@@ -13,6 +14,7 @@ const Layout = () => {
             <ServicesSection></ServicesSection>
             <ClientsSection></ClientsSection>
             <TeamSection></TeamSection>
+            <ContactUsSection></ContactUsSection>
         </div>
     );
 };

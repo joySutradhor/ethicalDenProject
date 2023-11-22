@@ -27,7 +27,7 @@ const ServicesSection = () => {
                 }}>Develop, Exhibit, Secure</h2>
             <p className='text-[#FBFBFB] w-3/4 md:mb-[50px]' >Welcome to Ethical Den - The Strategic Digital Company. We are a brand and digital consultancy based in India, partnering globally with leaders across industries to build future products, services, and brands. Working for the unknown since 2021. Our services span a wide variety of audiences and capabilities, but all of them are rooted in inspiring ideas, human connection, and writing your brands future. The world is changing fast. We help you keep </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-10">
                 {servicesArray.map(service => (
                     <div key={service.id} className="text-[#FBFBFB] rounded-md">
                         <h3 className=" ">{service.title}</h3>
