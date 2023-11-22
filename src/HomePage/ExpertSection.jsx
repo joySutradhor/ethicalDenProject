@@ -45,7 +45,7 @@ const ExpertSection = () => {
                             <p className="text-[#FBFBFB] font-[22px] leading-[25px] ">{item.description}</p>
                         </Fade>
                     </div>
-                    <Slide>
+                    <Slide delay={1}>
 
                         <img src={item.img} alt={item.title} className="object-cover rounded-lg w-[329px] h-[297px]" />
                     </Slide>
