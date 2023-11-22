@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from "/logo.png";
+import socail from "/social.png"
 
 const HeroSection = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const HeroSection = () => {
 
     return (
         <div className="bg-[url('./hero.png')] md:h-screen">
-            <nav className="border-gray-200 py-2.5 dark:bg-gray-900">
+            <nav className="border-gray-200 py-2.5 dark:bg-gray-900 relative">
                 <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto md:mt-[40px] font-inter text-white">
                     <img src={logo} className="h-6 mr-3 sm:h-9 hover:text-teal-500" alt="EthicalDen Logo" />
 
@@ -58,7 +59,7 @@ const HeroSection = () => {
                             }`}
                         id="mobile-menu-2"
                     >
-                       {/* list items */}
+                        {/* list items */}
                         <ul className="flex flex-col mt-4 md:font-medium lg:flex-row lg:space-x-8 lg:mt-0 cursor-pointer">
                             <li className="nav-item transition-all text-teal-500 duration-300 border-b border-transparent md:hover:border-teal-500">Home</li>
                             <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500 md:hover:text-teal-500">About Us</li>
@@ -70,6 +71,12 @@ const HeroSection = () => {
                     </div>
                 </div>
             </nav>
+            <div className='absolute bottom-1/4 left-[35%] transform -translate-x-1/2 -translate-y-1/5'>
+                <h1 className='md:text-4xl text-[#fbfbfb]'>innovative Cyber Agency </h1>
+                <h2 className='md:text-4xl text-[#fbfbfb]'>Artificial Intelligence</h2>
+                <p className='w-3/4 text-[#fcfcfc] my-[40px]'>We are the best digital marketing agency from West Bengal, curating experiences that users fall in love with.</p>
+                <img src={socail} alt="" />
+            </div>
 
             <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
         </div>

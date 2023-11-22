@@ -17,7 +17,7 @@ const ServicesSection = () => {
     ];
 
     return (
-        <div className='md:mx-[140px]'>
+        <div className='md:mx-[90px]'>
             <h5 className='text-[#FAFAFA] font-[22px]'>Services</h5>
             <h2 className="inline-block md:text-2xl md:my-[20px] font-bold font-inter text-transparent bg-gradient-to-br from-teal-500 via-green-500 to-yellow-300"
                 style={{

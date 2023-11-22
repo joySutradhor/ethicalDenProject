@@ -11,7 +11,7 @@ const ClientsSection = () => {
     ];
 
     return (
-        <div className='mx-[140px] md:my-[80px]'>
+        <div className='mx-[90px] md:my-[80px]'>
             <h5 className='text-[#FAFAFA] '>Our Clients</h5>
             <div className="grid grid-cols-5 gap-2">
                 {clientsArray.map(client => (

@@ -33,7 +33,7 @@ const WorkSection = () => {
     ];
 
     return (
-        <div className='md:mx-[140px] md:my-[80px] text-[#fafafa]'>
+        <div className='md:mx-[90px] md:my-[80px] text-[#fafafa]'>
             <h3 className='my-[40px]'>Recent Work</h3>
             <div className='relative grid grid-cols-2 justify-between gap-5'>
                 {data.map((item) => (

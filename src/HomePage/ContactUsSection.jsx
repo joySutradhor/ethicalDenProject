@@ -12,7 +12,7 @@ const ContactUsSection = () => {
     ];
     return (
         <>
-            <div className=' md:mx-[140px]  md:flex flex md:gap-[350px]'>
+            <div className=' md:mx-[90px]  md:flex flex md:gap-[350px]'>
                 <div className='grid col-span-2'>
                     <h4 className='text-[#FAFAFA]'>Hire Me</h4>
                     <h2 className="inline-block md:text-2xl md:my-[20px] font-bold font-inter text-transparent bg-gradient-to-br from-teal-500 via-green-500 to-yellow-300"

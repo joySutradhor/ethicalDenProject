@@ -10,7 +10,7 @@ const ItemsComponent = () => {
     ];
 
     return (
-        <div className='md:mx-[140px] md:mb-[80px]'>
+        <div className='md:mx-[90px] md:mb-[80px]'>
             <h5 className='text-[#FAFAFA] md:mb-[20px]'>Our Teams</h5>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-2">
                 {itemsArray.map(item => (

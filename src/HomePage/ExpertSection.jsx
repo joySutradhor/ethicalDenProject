@@ -24,7 +24,7 @@ const ExpertSection = () => {
     ];
 
     return (
-        <div className="grid grid-cols-1 md:mx-[125px] md:my-[80px]">
+        <div className="grid grid-cols-1 md:mx-[80px] md:my-[80px]">
             {data.map((item) => (
                 <div key={item.id} className=" flex w-full justify-between items-center my-8 md:px-4 even:flex-row-reverse ">
                     <div className="mb-8 w-1/2  ">
@@ -38,6 +38,7 @@ const ExpertSection = () => {
                     </div>
                     <div>
                         <img src={item.img} alt={item.title} className=" object-cover rounded-lg w-[329px] h-[297px]" />
+                        
                     </div>
                 </div>
             ))}
