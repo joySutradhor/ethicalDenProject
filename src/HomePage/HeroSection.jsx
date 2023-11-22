@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from "/logo.png";
 import socail from "/social.png"
 import { Fade } from "react-awesome-reveal";
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -74,9 +75,26 @@ const HeroSection = () => {
             </nav>
             <div className='absolute bottom-1/4 left-[35%] transform -translate-x-1/2 -translate-y-1/5'>
                 <Fade cascade >
-                    <h1 className='md:text-4xl text-[#fbfbfb]'>innovative Cyber Agency </h1>
-                    <h2 className='md:text-4xl text-[#fbfbfb]'>Artificial Intelligence</h2>
-                    <p className='w-3/4 text-[#fcfcfc] my-[40px]'>We are the best digital marketing agency from West Bengal, curating experiences that users fall in love with.</p>
+                    <h1 className='md:text-4xl text-gray-400'>innovative Cyber Agency </h1>
+                    <TypeAnimation
+                        sequence={[
+                            // Same substring at the start will only be typed out once, initially
+                            'We Work for Artificial Intelligence',
+                            1000, // wait 1s before replacing "Mice" with "Hamsters"
+                            'We Work for Web Development',
+                            1000,
+                            'We Work for Graphics Design',
+                            1000,
+                            'We Work for Video Editing',
+                            1000
+                        ]}
+                        wrapper="span"
+                        speed={70}
+                        style={{ fontSize: '2em', display: 'inline-block', color:"#abbcd5"  }}
+                        repeat={Infinity}
+                    />
+                    
+                    <p className='w-3/4 text-gray-400 my-[40px]'>We are the best digital marketing agency from West Bengal, curating experiences that users fall in love with.</p>
                     <img src={socail} alt="" />
                 </Fade>
             </div>

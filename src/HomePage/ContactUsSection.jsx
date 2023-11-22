@@ -14,7 +14,7 @@ const ContactUsSection = () => {
     return (
         <>
             <div className=' md:mx-[90px]  md:flex flex md:gap-[350px]'>
-                <Slide>
+                <Fade duration={2000}>
                     <div className='grid col-span-2'>
                         <h4 className='text-[#FAFAFA]'>Hire Me</h4>
                         <Fade duration={5000}>
@@ -29,7 +29,7 @@ const ContactUsSection = () => {
                         {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 {servicesArray.map((service) => (
-                                    <Fade duration={200} direction='up' key={service.id} className="text-[#fafafa] py-1 px-4 border  rounded-2xl">
+                                    <Fade duration={200} key={service.id} className="text-[#fafafa] py-1 px-4 border  rounded-2xl">
                                         <p className="text-lg font-bold text-[10px]">{service.serviceName}</p>
                                     </Fade>
                                 ))}
@@ -81,8 +81,8 @@ const ContactUsSection = () => {
 
 
                     </div>
-                </Slide>
-                <Slide direction='right'>
+                </Fade>
+                <Fade duration={2000}>
                     <div className='text-[#fafafa]'>
                         <Fade ><h2 className='md:mb-[20px]'>Contacts</h2></Fade>
                         <div className='text-[#fcfcfc] text-[13px]'>
@@ -105,7 +105,7 @@ const ContactUsSection = () => {
                             <p>Nabi Nagar, Muhammadpur, Dhaka</p>
                         </div>
                     </div>
-                </Slide>
+                </Fade>
             </div>
             <p className='text-center pb-4 text-[#fafafa] text-[14px]'>© 2023, Ethical Den, all rights reserved</p>
 
