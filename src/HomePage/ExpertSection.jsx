@@ -26,7 +26,7 @@ const ExpertSection = () => {
     ];
 
     return (
-        <div className="grid grid-cols-1 md:mx-[80px] md:my-[80px]">
+        <div className="grid grid-cols-1 md:mx-[80px] md:my-[80px]" id='experts'>
             {data.map((item) => (
                 <div key={item.id} className=" flex w-full justify-between items-center my-8 md:px-4 even:flex-row-reverse ">
                     <div className="mb-8 w-1/2  ">

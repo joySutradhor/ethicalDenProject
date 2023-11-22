@@ -14,7 +14,7 @@ const ContactUsSection = () => {
     return (
         <>
             <div className=' md:mx-[90px]  md:flex flex md:gap-[350px]'>
-                <Fade duration={2000}>
+                <Fade duration={5000}>
                     <div className='grid col-span-2'>
                         <h4 className='text-[#FAFAFA]'>Hire Me</h4>
                         <Fade duration={5000}>
@@ -30,7 +30,7 @@ const ContactUsSection = () => {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 {servicesArray.map((service) => (
                                     <Fade duration={200} key={service.id} className="text-[#fafafa] py-1 px-4 border  rounded-2xl">
-                                        <p className="text-lg font-bold text-[10px]">{service.serviceName}</p>
+                                        <p className="font-bold text-[14px]">{service.serviceName}</p>
                                     </Fade>
                                 ))}
                             </div>
@@ -82,7 +82,7 @@ const ContactUsSection = () => {
 
                     </div>
                 </Fade>
-                <Fade duration={2000}>
+                <Fade duration={5000}>
                     <div className='text-[#fafafa]'>
                         <Fade ><h2 className='md:mb-[20px]'>Contacts</h2></Fade>
                         <div className='text-[#fcfcfc] text-[13px]'>

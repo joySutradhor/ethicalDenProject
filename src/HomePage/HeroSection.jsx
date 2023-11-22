@@ -12,7 +12,7 @@ const HeroSection = () => {
     };
 
     return (
-        <div className="bg-[url('./hero.png')] md:h-screen">
+        <div className="bg-[url('/hero.png')] md:h-screen">
             <nav className="border-gray-200 py-2.5 dark:bg-gray-900 relative">
                 <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto md:mt-[40px] font-inter text-white">
                     <img src={logo} className="h-6 mr-3 sm:h-9 hover:text-teal-500" alt="EthicalDen Logo" />
