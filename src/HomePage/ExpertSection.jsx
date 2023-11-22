@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ExpertSection = () => {
-    // objects for maping 
+    // objects for maping
     const data = [
         {
             id: 1,
@@ -24,11 +24,11 @@ const ExpertSection = () => {
     ];
 
     return (
-        <div className="grid grid-cols-1 md:mx-[125px]">
+        <div className="grid grid-cols-1 md:mx-[125px] md:my-[80px]">
             {data.map((item) => (
                 <div key={item.id} className=" flex w-full justify-between items-center my-8 md:px-4 even:flex-row-reverse ">
                     <div className="mb-8 w-1/2  ">
-                        <h2 className="inline-block md:text-3xl md:mb-[20px] font-bold font-inter text-transparent bg-gradient-to-br from-teal-500 via-green-500 to-yellow-300"
+                        <h2 className="inline-block md:text-2xl md:mb-[20px] font-bold font-inter text-transparent bg-gradient-to-br from-teal-500 via-green-500 to-yellow-300"
                             style={{
                                 backgroundClip: 'text',
                                 WebkitBackgroundClip: 'text',
