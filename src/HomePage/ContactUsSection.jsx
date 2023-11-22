@@ -83,7 +83,7 @@ const ContactUsSection = () => {
                     </div>
                 </Slide>
                 <Slide direction='right'>
-                    <Fade duration={200} direction='up' className='text-[#fafafa]'>
+                    <div className='text-[#fafafa]'>
                         <Fade ><h2 className='md:mb-[20px]'>Contacts</h2></Fade>
                         <div className='text-[#fcfcfc] text-[13px]'>
                             <p>hello@ethicalden.com</p>
@@ -104,7 +104,7 @@ const ContactUsSection = () => {
                             <p>Bangladesh Office</p>
                             <p>Nabi Nagar, Muhammadpur, Dhaka</p>
                         </div>
-                    </Fade>
+                    </div>
                 </Slide>
             </div>
             <p className='text-center pb-4 text-[#fafafa] text-[14px]'>© 2023, Ethical Den, all rights reserved</p>
