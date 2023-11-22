@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from "/logo.png";
 import socail from "/social.png"
+import { Fade } from "react-awesome-reveal";
 
 const HeroSection = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -72,10 +73,12 @@ const HeroSection = () => {
                 </div>
             </nav>
             <div className='absolute bottom-1/4 left-[35%] transform -translate-x-1/2 -translate-y-1/5'>
-                <h1 className='md:text-4xl text-[#fbfbfb]'>innovative Cyber Agency </h1>
-                <h2 className='md:text-4xl text-[#fbfbfb]'>Artificial Intelligence</h2>
-                <p className='w-3/4 text-[#fcfcfc] my-[40px]'>We are the best digital marketing agency from West Bengal, curating experiences that users fall in love with.</p>
-                <img src={socail} alt="" />
+                <Fade cascade >
+                    <h1 className='md:text-4xl text-[#fbfbfb]'>innovative Cyber Agency </h1>
+                    <h2 className='md:text-4xl text-[#fbfbfb]'>Artificial Intelligence</h2>
+                    <p className='w-3/4 text-[#fcfcfc] my-[40px]'>We are the best digital marketing agency from West Bengal, curating experiences that users fall in love with.</p>
+                    <img src={socail} alt="" />
+                </Fade>
             </div>
 
             <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>

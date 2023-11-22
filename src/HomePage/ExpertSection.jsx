@@ -1,4 +1,6 @@
 import React from 'react';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
+
 
 const ExpertSection = () => {
     // objects for maping
@@ -28,21 +30,29 @@ const ExpertSection = () => {
             {data.map((item) => (
                 <div key={item.id} className=" flex w-full justify-between items-center my-8 md:px-4 even:flex-row-reverse ">
                     <div className="mb-8 w-1/2  ">
-                        <h2 className="inline-block md:text-2xl md:mb-[20px] font-bold font-inter text-transparent bg-gradient-to-br from-teal-500 via-green-500 to-yellow-300"
-                            style={{
-                                backgroundClip: 'text',
-                                WebkitBackgroundClip: 'text',
-                                WebkitTextFillColor: 'transparent',
-                            }}>{item.title}</h2>
-                        <p className="text-[#FBFBFB] font-[22px] leading-[25px] ">{item.description}</p>
+                        <Slide>
+                            <h2 className="inline-block md:text-2xl md:mb-[20px] font-bold font-inter text-transparent bg-gradient-to-br from-teal-500 via-green-500 to-yellow-300"
+                                style={{
+                                    backgroundClip: 'text',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent',
+                                }}>{item.title}</h2>
+
+
+                        </Slide>
+                        <Fade delay={2} duration={3000}>
+
+                            <p className="text-[#FBFBFB] font-[22px] leading-[25px] ">{item.description}</p>
+                        </Fade>
                     </div>
-                    <div>
-                        <img src={item.img} alt={item.title} className=" object-cover rounded-lg w-[329px] h-[297px]" />
-                        
-                    </div>
+                    <Slide>
+
+                        <img src={item.img} alt={item.title} className="object-cover rounded-lg w-[329px] h-[297px]" />
+                    </Slide>
                 </div>
-            ))}
-        </div>
+            ))
+            }
+        </div >
     );
 };
 
