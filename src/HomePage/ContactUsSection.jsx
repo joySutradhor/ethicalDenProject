@@ -83,15 +83,15 @@ const ContactUsSection = () => {
                     </div>
                 </Slide>
                 <Slide direction='right'>
-                    <Fade duration={500} direction='up' className='text-[#fafafa]'>
-                        <Fade duration={3000}><h2 className='md:mb-[20px]'>Contacts</h2></Fade>
+                    <Fade duration={200} direction='up' className='text-[#fafafa]'>
+                        <Fade ><h2 className='md:mb-[20px]'>Contacts</h2></Fade>
                         <div className='text-[#fcfcfc] text-[13px]'>
                             <p>hello@ethicalden.com</p>
                             <p>+91 9547578920</p>
                         </div>
                         <h4 className='md:my-[20px]'>Follow</h4>
                         <img src={socail} alt="socail img" />
-                        <Fade duration={3000}><h2 className='md:my-[20px]'>ADDRESS</h2></Fade>
+                        <Fade ><h2 className='md:my-[20px]'>ADDRESS</h2></Fade>
                         <div className='text-[#fcfcfc] text-[13px] pb-4'>
                             <p>Kolkata Office</p>
                             <p>ANO-312, Astra Towers, New Town, Kolkata</p>

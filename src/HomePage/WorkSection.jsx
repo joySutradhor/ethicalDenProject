@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Fade, Zoom } from 'react-awesome-reveal';
 
 const WorkSection = () => {
     const data = [
@@ -33,7 +34,7 @@ const WorkSection = () => {
     ];
 
     return (
-        <div className='md:mx-[90px] md:my-[80px] text-[#fafafa]'>
+        <Fade direction='down' className='md:mx-[90px] md:my-[80px] text-[#fafafa]'>
             <h3 className='my-[40px]'>Recent Work</h3>
             <div className=' grid grid-cols-2 justify-between gap-5'>
                 {data.map((item) => (
@@ -59,7 +60,7 @@ const WorkSection = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </Fade>
 
     );
 };
