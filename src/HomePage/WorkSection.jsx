@@ -35,9 +35,9 @@ const WorkSection = () => {
     return (
         <div className='md:mx-[90px] md:my-[80px] text-[#fafafa]'>
             <h3 className='my-[40px]'>Recent Work</h3>
-            <div className='relative grid grid-cols-2 justify-between gap-5'>
+            <div className=' grid grid-cols-2 justify-between gap-5'>
                 {data.map((item) => (
-                    <div key={item.id} className='grid grid-cols-2  even:mt-[40px]' >
+                    <div key={item.id} className='grid grid-cols-2 relative even:mt-[40px]' >
 
                         <div
                             style={{
