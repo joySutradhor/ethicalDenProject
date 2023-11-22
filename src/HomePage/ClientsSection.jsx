@@ -2,21 +2,21 @@ import React from 'react';
 
 const ClientsSection = () => {
     const clientsArray = [
-        { id: 1, img: "path/to/client1.jpg" },
-        { id: 2, img: "path/to/client2.jpg" },
-        { id: 3, img: "path/to/client3.jpg" },
-        { id: 4, img: "path/to/client4.jpg" },
-        { id: 5, img: "path/to/client5.jpg" },
+        { id: 4, img: "./rovdear.png" },
+        { id: 2, img: "./dream.png" },
+        { id: 3, img: "./e-laj.png" },
+        { id: 5, img: "./wonderlite.png" },
+        { id: 1, img: "./akps.png" },
  
     ];
 
     return (
-        <div>
-            <h5>Our Clients</h5>
-            <div className="grid grid-cols-5 gap-4">
+        <div className='mx-[140px] md:my-[80px]'>
+            <h5 className='text-[#FAFAFA] '>Our Clients</h5>
+            <div className="grid grid-cols-5 gap-2">
                 {clientsArray.map(client => (
                     <div key={client.id} className="overflow-hidden">
-                        <img src={client.img} alt={`Client ${client.id}`} className="w-full h-auto object-cover rounded-md" />
+                        <img src={client.img} alt={`Client ${client.id}`} className="w-[140px] h-auto object-cover rounded-md" />
                     </div>
                 ))}
             </div>
