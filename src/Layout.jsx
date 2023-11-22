@@ -5,6 +5,7 @@ import ServicesSection from './HomePage/ServicesSection';
 import ClientsSection from './HomePage/ClientsSection';
 import TeamSection from './HomePage/TeamSection';
 import ContactUsSection from './HomePage/ContactUsSection';
+import WorkSection from './HomePage/WorkSection';
 
 const Layout = () => {
     return (
@@ -12,6 +13,7 @@ const Layout = () => {
             <HeroSection></HeroSection>
             <ExpertSection></ExpertSection>
             <ServicesSection></ServicesSection>
+            <WorkSection></WorkSection>
             <ClientsSection></ClientsSection>
             <TeamSection></TeamSection>
             <ContactUsSection></ContactUsSection>
