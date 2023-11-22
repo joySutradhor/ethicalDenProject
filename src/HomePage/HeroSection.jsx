@@ -61,11 +61,11 @@ const HeroSection = () => {
                        {/* list items */}
                         <ul className="flex flex-col mt-4 md:font-medium lg:flex-row lg:space-x-8 lg:mt-0 cursor-pointer">
                             <li className="nav-item transition-all text-teal-500 duration-300 border-b border-transparent md:hover:border-teal-500">Home</li>
-                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500">About Us</li>
-                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500">Services</li>
-                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500">Our Work</li>
-                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500">Education</li>
-                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500">Contact</li>
+                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500 md:hover:text-teal-500">About Us</li>
+                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500 md:hover:text-teal-500">Services</li>
+                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500 md:hover:text-teal-500">Our Work</li>
+                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500 md:hover:text-teal-500">Education</li>
+                            <li className="nav-item transition-all duration-300 border-b border-transparent md:hover:border-teal-500 md:hover:text-teal-500">Contact</li>
                         </ul>
                     </div>
                 </div>
